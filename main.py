@@ -16,6 +16,7 @@ cont3 = st.container()
 copyright_container = st.container()
 
 clicked = False
+loaded = False
 
 with header:
     st.title("Cat and Dog Classification Project")
@@ -70,7 +71,9 @@ with image_classifier:
 
         with column4:
             if clicked:
-                model = load_model()
+                if not loaded:
+                    model = load_model()
+                    loaded = True
                 image = image.resize((224, 224))
                 img_array = preprocessing.image.img_to_array(image)
                 label = predict(img_array)
