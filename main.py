@@ -47,7 +47,7 @@ with desc:
         "predicted result of 98.37% accuracy, 98.37% precision score, "
         "98.37% recall score and 0.9837 f1 score. Libraries such as tensorflow, sklearn, numpy, matplotlib, "
         "streamlit are used. "
-        "The whole project source code can be found here.")
+        "The whole project source code can be found [here](https://github.com/KaungKhant3KoKo/cat-and-dog-classifier).")
 
 with upload_image:
     uploaded_image = st.file_uploader("Choose an Image File", type=["jpg", "png", "svg"])
