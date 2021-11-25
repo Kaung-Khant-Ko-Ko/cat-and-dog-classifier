@@ -22,7 +22,7 @@ with header:
     st.title("Cat and Dog Classification Project")
 
 
-@st.cache
+@st.cache(allow_output_mutation=True)
 def load_model():
     return models.load_model("classifier_with_transfer_learning.h5")
 
